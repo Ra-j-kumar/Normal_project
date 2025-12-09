@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket game</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bat Ball Stump Game</h1>
+    <button onclick="
+    console.log('You have chosen Bat');
+    let randomnumber = Math.random() *3;
+    if (randomnumber > 0 && randomnumber <=1){
+        console.log('Computer have chosen Bat');
+        console.log('Draw');
+    } else if (randomnumber > 1 && randomnumber <= 2){
+        console.log('Computer have chosen Ball');
+        console.log('You won');
+    } else {
+        console.log('Computer have chosen Stump');
+        console.log('Computer won');
+    }
+    ">Bat</button>
+
+    <button onclick="
+    console.log('You have chosen Ball');   
+    randomnumber = Math.random() *3; 
+    if (randomnumber > 0 && randomnumber <=1){
+        console.log('Computer have chosen Bat');
+        console.log('Computer won');
+    } else if (randomnumber > 1 && randomnumber <= 2){
+        console.log('Computer have chosen Ball');
+        console.log('Draw');
+    } else {
+        console.log('Computer have chosen Stump');
+        console.log('You won');
+    }
+    ">Ball</button>
+
+
+    <button onclick="console.log('You have chosen Bat'); 
+    randomnumber = Math.random() *3;   
+    if (randomnumber > 0 && randomnumber <=1){
+        console.log('Computer have chosen Bat');
+        console.log('You won');
+    } else if (randomnumber > 1 && randomnumber <= 2){
+        console.log('Computer have chosen Ball');
+        console.log('Computer won');
+    } else {
+        console.log('Computer have chosen Stump');
+        console.log('Draw');
+    }">stump</button>
+</body>
+
+</html>
+
+
+
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Ra-j-kumar/Normal_project.git
+git push -u origin main
